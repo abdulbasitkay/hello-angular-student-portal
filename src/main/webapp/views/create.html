@@ -1,0 +1,35 @@
+<div class="row">
+    <div class='col-md-12'>
+        <fieldset>
+            <legend>Student CRUD</legend>
+        </fieldset>
+        <form role="form" class="form">
+            <div class="input-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" ng-model="student.firstName" />
+            </div>
+            <div class="input-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" ng-model="student.lastName" />
+            </div>
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="number" class="form-control" id="age" ng-model="student.age" />
+            </div>
+            <div class="input-group">
+                <label for="hobbies">Hobbies</label>
+                <textarea class="form-control" id="hobbies" ng-model="student.hobbies"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="sex">Sex</label>
+                <input type="radio" id="sex" ng-model="student.sex" value="Male"/> Male
+                <input type="radio" id="sex" ng-model="student.sex" value="Female"/> Female
+            </div>
+            <button ng-click="createNewStudent()" class="btn btn-default btn-primary"><span class="glyphicon glyphicon-save"></span> SAVE</button>
+        </form> 
+    </div>
+</div>
+<hr/>
+<div ng-include="'views/view.html'"></div>
+
+
